@@ -25,8 +25,8 @@ const webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     publicPath: config.build.assetsPublicPath,
-    filename: 'smile-cps.min.js',
-    library: 'smile-cps',
+    filename: 'smile-smile.min.js',
+    library: 'smile-smile',
     libraryTarget: 'umd'
   },
   plugins: [
@@ -45,7 +45,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     //   filename: utils.assetsPath('css/[name].[contenthash].css')
     // }),
     new ExtractTextPlugin({
-      filename: 'smile-cps.min.css',
+      filename: 'smile-smile.min.css',
       allChunks: true 
     }),
     new OptimizeCSSPlugin({
